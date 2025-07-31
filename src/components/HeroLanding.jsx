@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
+
+    const MotionLink = motion(Link);
   return (
     <section className="relative overflow-hidden py-16 px-6 md:px-12">
       {/* Background image */}
@@ -30,22 +33,22 @@ const HeroSection = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <motion.a
+            <MotionLink
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="#donate"
+              to='/donate'
               className="bg-[#e01b24] hover:bg-red-800 text-white px-6 py-3 rounded-md text-lg font-semibold transition"
             >
               Donate Now
-            </motion.a>
-            <motion.a
+            </MotionLink>
+            <MotionLink
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              href="#about"
+              to="/about"
               className="border border-[#e01b24] text-[#e01b24] hover:bg-red-50 px-6 py-3 rounded-md text-lg font-semibold transition"
             >
               Learn More
-            </motion.a>
+            </MotionLink>
           </div>
         </motion.div>
 
