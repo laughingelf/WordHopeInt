@@ -22,7 +22,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-6xl font-bold text-green-900 mb-4">
-            Bringing Hope to the Maasai People
+            Sharing Hope with the People of Tanzania
           </h1>
           <p className="text-lg md:text-xl text-green-800 mb-6">
             Word Hope International provides medical care, sustainable farming, education, and spiritual support to communities in Africa.

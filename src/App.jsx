@@ -7,6 +7,9 @@ import Services from './pages/Services'
 import './App.css'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
+import Donate from './pages/Donate'
+import Programs from './pages/Programs'
+import Gallery from './pages/Gallery'
 
 
 function App() {
@@ -24,6 +27,9 @@ function App() {
           <Route path='/about' element={<About/>} />
           <Route path='/services' element={<Services/>} />
           <Route path='/contact' element={<Contact/>} />
+          <Route path='/programs' element={<Programs />} />
+          <Route path='/donate' element={<Donate />} />
+          <Route path='/gallery' element={<Gallery />} />
           <Route path='*' element={<NoPage/>} />
         </Routes>
         <Footer />
