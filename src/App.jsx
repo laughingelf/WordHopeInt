@@ -16,6 +16,7 @@ import ProgramsEducation from './pages/ProgramEducation'
 import PageTransitionWrapper from './components/PageTransition'
 import SuccessPage from './pages/SuccessPage'
 import CancelPage from './pages/CancelPage'
+import PastoralTraining from './components/PTraining'
 
 
 function App() {
@@ -36,8 +37,9 @@ function App() {
           <Route path='/contact' element={<Contact/>} />
           <Route path='/programs' element={<Programs />} />
           <Route path='/programs/health' element={<ProgramsHealth />} />
-          <Route path='/programs/farming' element={<ProgramsFarming />} />
+          <Route path='/programs/agriculture' element={<ProgramsFarming />} />
           <Route path='/programs/education' element={<ProgramsEducation />} />
+          <Route path='/programs/pastor-training' element={<PastoralTraining />} />
           <Route path='/success' element={<SuccessPage />} />
           <Route path='/cancel' element={<CancelPage />} />
           <Route path='/donate' element={<Donate />} />

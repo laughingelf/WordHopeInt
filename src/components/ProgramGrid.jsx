@@ -6,33 +6,33 @@ const programCategories = [
     title: "Education",
     description:
       "Building schools, providing supplies, and supporting students from primary through vocational training.",
-    image: "/img/programs/education.jpg",
+    image: "/img/education2.jpeg",
     link: "/programs/education",
   },
   {
     title: "Health",
     description:
       "Mobile clinics, basic healthcare access, and health education for rural communities.",
-    image: "/img/programs/health.jpg",
+    image: "/img/clinic-img.jpeg",
     link: "/programs/health",
   },
   {
     title: "Agriculture",
     description:
       "Sustainable farming training, seed support, and community gardens to improve food security.",
-    image: "/img/programs/agriculture.jpg",
+    image: "/img/feeding.jpeg",
     link: "/programs/agriculture",
   },
   {
     title: "Pastor Training",
     description:
       "Equipping local pastors with biblical training, leadership development, and practical ministry tools.",
-    image: "/img/programs/pastor-training.jpg",
+    image: "/img/PTraining1.jpg",
     link: "/programs/pastor-training",
   },
 ];
 
-const ProgramCategoryGrid = () => {
+const ProgramCategory = () => {
   return (
     <section className="py-16 px-6 md:px-12 bg-white">
       <div className="max-w-6xl mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-center">
@@ -59,4 +59,4 @@ const ProgramCategoryGrid = () => {
   );
 };
 
-export default ProgramCategoryGrid;
+export default ProgramCategory;
