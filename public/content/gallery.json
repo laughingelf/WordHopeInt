@@ -1,0 +1,11 @@
+{
+  "photos": [
+    {
+      "src": "/uploads/sample-1.jpg",
+      "alt": "Sample image",
+      "caption": "First sample photo",
+      "tags": "clinic",
+      "date": "2025-08-01T00:00:00.000Z"
+    }
+  ]
+}

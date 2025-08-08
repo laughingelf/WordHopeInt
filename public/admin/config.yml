@@ -1,0 +1,26 @@
+backend:
+  name: git-gateway
+  branch: master   # change to "main" if that’s your default
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "gallery"
+    label: "Gallery"
+    files:
+      - label: "Gallery Items"
+        name: "items"
+        file: "public/content/gallery.json"
+        format: "json"
+        fields:
+          - label: "Photos"
+            name: "photos"
+            widget: "list"
+            summary: "{{fields.caption}}"
+            fields:
+              - { label: "Image", name: "src", widget: "image" }
+              - { label: "Alt Text", name: "alt", widget: "string" }
+              - { label: "Caption", name: "caption", widget: "string", required: false }
+              - { label: "Tags (comma-separated)", name: "tags", widget: "string", required: false, hint: "e.g., clinic, school, farming" }
+              - { label: "Date", name: "date", widget: "datetime", required: false }
