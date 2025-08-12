@@ -29,7 +29,7 @@ const ContactForm = () => {
               name="name"
               id="name"
               required
-              className="w-full border border-gray-300 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full border text-green-700 border-gray-300 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
             />
           </div>
 
@@ -43,7 +43,7 @@ const ContactForm = () => {
               name="email"
               id="email"
               required
-              className="w-full border border-gray-300 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full border text-green-700 border-gray-300 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
             />
           </div>
 
@@ -57,7 +57,7 @@ const ContactForm = () => {
               id="message"
               rows="5"
               required
-              className="w-full border border-gray-300 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full border text-green-700 border-gray-300 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
             ></textarea>
           </div>
 
