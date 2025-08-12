@@ -52,11 +52,22 @@ const Footer = () => {
             <a
               href="https://www.facebook.com/profile.php?id=61578211120019"
               className="hover:text-white text-green-200"
-              target="_blank" rel="noopener noreferrer"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Facebook
             </a>
+
+            <a
+              href="https://www.instagram.com/wordhopeint/"
+              className="hover:text-white text-green-200"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
           </div>
+
         </div>
       </div>
 
