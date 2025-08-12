@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo / Site Name */}
         <a href="/" className="text-xl font-bold text-green-900">
-          Word Hope
+          Word Hope International
         </a>
 
         {/* Desktop Nav */}
