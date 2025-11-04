@@ -15,7 +15,6 @@ const impactData = [
   { label: "Eyeglasses Provided", value: 125 },
 ];
 
-
 const ImpactSection = () => {
   return (
     <section className="bg-green-50 py-16 px-6 md:px-12">
@@ -39,7 +38,17 @@ const ImpactSection = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          In Summer 2025, our mission team served the people of Qandach Village, Tanzania through medical outreach, evangelism, discipleship, and humanitarian aid. A fully functional medical clinic was operated by a compassionate team of doctors and nurses, touching lives with healing and hope. Evangelism efforts reached 1,274 people, with 477 decisions for Christ. Forty-two local pastors were trained, 147 learned Farming God’s Way, and 919 women attended hygiene classes—with 800 bags distributed. Our team shared 1,800 pounds of rice, 528 children were ministered to, 75 mosquito nets were given out, and 125 glasses were fitted by our optometry team. Every effort reflected the love of Christ, bringing hope and lasting transformation.
+          In Summer 2025, our mission team served the people of Qandach Village,
+          Tanzania through medical outreach, evangelism, discipleship, and
+          humanitarian aid. A fully functional medical clinic was operated by a
+          compassionate team of doctors and nurses, touching lives with healing
+          and hope. Evangelism efforts reached 1,274 people, with 477 decisions
+          for Christ. Forty-two local pastors were trained, 147 learned Farming
+          God’s Way, and 919 women attended hygiene classes—with 800 bags
+          distributed. Our team shared 1,800 pounds of rice, 528 children were
+          ministered to, 75 mosquito nets were given out, and 125 glasses were
+          fitted by our optometry team. Every effort reflected the love of
+          Christ, bringing hope and lasting transformation.
         </motion.p>
 
         {/* Stats */}
@@ -53,7 +62,7 @@ const ImpactSection = () => {
           Impact by the Numbers
         </motion.h3>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-10 mb-12">
           {impactData.map((item, index) => (
             <motion.div
               key={index}
@@ -64,11 +73,7 @@ const ImpactSection = () => {
               viewport={{ once: true }}
             >
               <div className="text-4xl font-bold text-[#e01b24]">
-                <CountUp
-                  end={item.value}
-                  duration={2}
-                  suffix={item.suffix || ""}
-                />
+                <CountUp end={item.value} duration={2} suffix={item.suffix || ""} />
               </div>
               <p className="text-green-800 text-lg mt-2 text-center">
                 {item.label}
@@ -76,6 +81,22 @@ const ImpactSection = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* CTA Button */}
+        <motion.div
+          className="flex justify-center"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
+          viewport={{ once: true }}
+        >
+          <a
+            href="/project-updates"
+            className="bg-[#e01b24] text-white font-semibold px-8 py-3 rounded-md shadow-md hover:opacity-90 transition"
+          >
+            View Project Updates
+          </a>
+        </motion.div>
       </div>
     </section>
   );

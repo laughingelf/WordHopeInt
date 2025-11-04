@@ -17,6 +17,7 @@ import PageTransitionWrapper from './components/PageTransition'
 import SuccessPage from './pages/SuccessPage'
 import CancelPage from './pages/CancelPage'
 import PastoralTraining from './components/PTraining'
+import ProjectUpdates from './components/ProjectUpdatesComp'
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
           <Route path='/programs/agriculture' element={<ProgramsFarming />} />
           <Route path='/programs/education' element={<ProgramsEducation />} />
           <Route path='/programs/pastor-training' element={<PastoralTraining />} />
+          <Route path='/project-updates' element={<ProjectUpdates />} />
           <Route path='/success' element={<SuccessPage />} />
           <Route path='/cancel' element={<CancelPage />} />
           <Route path='/donate' element={<Donate />} />
